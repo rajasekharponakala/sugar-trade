@@ -7,8 +7,8 @@ An **interactive visualization site** built on the source study:
 > *Studies on Historical Materialism*, n°1 · **Tricontinental: Institute for Social Research** · 54 pages · CC BY‑NC 4.0
 > Source PDF: <https://thetricontinental.org/wp-content/uploads/2026/08/20260828_StudiesHM_Roots-of-Capitalism_EN_Web.pdf>
 
-**Live site:** served from GitHub Pages (see deployment below).
-**Repository:** `sugar-trade`.
+**Live site:** https://rajasekharponakala.github.io/sugar-trade/ (GitHub Pages, `main`, `/root`).
+**Repository:** [`rajasekharponakala/sugar-trade`](https://github.com/rajasekharponakala/sugar-trade) (repo named `sugar-trade`).
 
 ---
 
@@ -72,14 +72,13 @@ python3 -m http.server 8000
 ## Deploy to GitHub Pages
 
 ```bash
-gh auth login                      # GitHub.com
-# repo under "sugar-trade" (see note below)
-gh repo create sugar-trade --public --source=. --push
-gh api -X POST repos/:owner/sugar-trade/pages -f build_type=workflow   # or Settings → Pages
-# or push to `gh-pages` / serve `main` `/root`
+gh auth login                                   # GitHub.com (already authenticated here)
+gh repo create sugar-trade --public --source=. --push   # or push to existing repo `sugar-trade`
+gh api -X POST repos/:owner/sugar-trade/pages -f source[branch]=main -f source[path]=/   # enable Pages
+gh api -X POST repos/:owner/sugar-trade/pages/builds                                     # trigger build
 ```
 
-> **Note on “under sugar-trade”.** On GitHub.com, organizations cannot be created via `gh` or the REST/GraphQL API (`POST /orgs`, `POST /user/orgs`, `POST /admin/organizations`, GraphQL `createOrganization` are unavailable/404). This project is therefore published as a **repository named `sugar-trade`** under the authenticated account. To put it under a real `sugar-trade` **organization**, create the org once in the GitHub web UI and `gh repo transfer` this repo, or `gh repo create sugar-trade/<name>` once the org exists.
+> **Note on “under sugar-trade”.** On GitHub.com, **organizations cannot be created via `gh` or the API** (`POST /orgs`, `POST /user/orgs`, `POST /admin/organizations`, GraphQL `createOrganization` are unavailable/404; `gh org` only lists). An empty **repository named `sugar-trade`** (`rajasekharponakala/sugar-trade`) already existed on the authenticated account and is used here. To publish under a real `sugar-trade` **organization**, create the org once in the GitHub web UI (or ask an org admin) and `gh repo transfer`, or `gh repo create sugar-trade/<name>` once the org exists.
 
 ## Credit & license
 
