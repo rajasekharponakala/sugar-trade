@@ -1,60 +1,297 @@
 {
-  "sugarProductionAmericas": {
-    "title": "Sugar production in the Americas", "unit": "tonnes", "page": 39, "source": "p.39",
-    "series": [{"year":1700,"value":50000,"label":"~50,000 tonnes"},{"year":1783,"value":200000,"label":"~200,000 tonnes (close of the American Revolution)"}],
-    "note": "Rose from approximately 50,000 tonnes in 1700 to around 200,000 tonnes by the close of the American Revolution."
-  },
-  "britishSugarImports": {
-    "title": "British sugar imports", "unit": "hundredweight", "page": 39, "source": "p.39",
-    "series": [
-      {"year":1700,"value":430000,"tonnes":21845,"label":"430,000 hundredweight (~21,845 t)"},
-      {"year":1800,"value":3000000,"tonnes":152407,"label":"3,000,000 hundredweight (~152,407 t)"}
-    ],
-    "note":"Sevenfold increase 1700–1800. All monetary values in pounds sterling unless noted."
-  },
-  "barbadosSugarShare": {
-    "title":"Sugar products share of Barbados total exports","unit":"%","page":35,"source":"p.35; David Eltis",
-    "series":[{"period":"1665–1666","value":91.2},{"period":"1688","value":91.6},{"period":"1690–1691","value":91.6},{"period":"1699–1701","value":95.6}]
-  },
-  "jamaicaToBritain": {"title":"Jamaica sugar exports destined for Britain","unit":"%","page":35,"value":95,"note":"Between 1682 and 1701, Britain is the destination for more than 95% of Jamaica's sugar exports.","source":"p.35"},
-  "rawSugarBritishImports": {"title":"Raw sugar share of all British imports, 1774","unit":"%","page":39,"value":20,"note":"Raw sugar accounts for one-fifth of all British imports, surpassing all other imported goods by a wide margin.","source":"p.39"},
-  "planterReceipts": {"title":"Caribbean planters' gross receipts from sugar exports to Britain, 1713→1775","unit":"×","page":39,"from":1713,"to":1775,"factor":3.2,"note":"Rose by a factor of 3.2, driven by rising demand in England and profitable re-export of refined sugar.","source":"p.39"},
-  "britishValueAdded": {"title":"Total value added to the British economy by sugar production & trade","unit":"£million","page":38,"source":"p.38; Klas Rönnbäck",
-    "series":[{"period":"first decade of the 18th century","value":0.5},{"period":"a century later","value":5.5}],
-    "note":"Captures surplus appropriated at each stage: cultivation, refining, re-export, final sale. £0.5m → £5.5m."
-  },
-  "jamaicanSurplus": {"title":"Surplus appropriated by Jamaican plantation owners, share of subsistence costs","unit":"%","page":38,"source":"p.38; Klas Rönnbäck",
-    "series":[{"year":1750,"value":40},{"year":1790,"value":100}],"note":"Surplus extracted equals what is spent on subsistence of enslaved people by 1790."
-  },
-  "muscovadoVsRefined": {"title":"Price of refined sugar in England vs muscovado in Jamaica","unit":"×","page":38,"factor":4,"note":"Fourfold difference 'completely out of proportion' to transport & refining cost → transfer pricing shifting profits to Britain.","source":"p.38"},
-  "colonyProfitability": {"title":"Colonial vs 'mother country' investment profitability","unit":"×","page":37,"low":4,"high":7,"note":"Investments in the colonies are four to seven times more profitable than in England.","source":"p.37"},
-  "britishCapitalSlavery": {"title":"British capital derived from enslaved-trade profits, 1770","unit":"%","page":37,"value":40,"note":"Stanley Engerman estimate: close to 40% of capital for Britain's commercial and industrial expansion.","source":"p.37"},
-  "britishNationalIncome": {"title":"Combined enslaved-trade + sugar profits, share of British national income","unit":"%","page":37,"value":5,"note":"~5%; underestimates total usurped profits; refining & re-export profits not added.","source":"p.37"},
-  "britishTransatlantic": {"title":"British transatlantic slave trade, 1640–1807","unit":"people","page":40,"source":"p.40",
-    "total":3100000,"survivedAtlantic":2700000,"shareOfAllEnslavedAfricansToAmericas":70,
-    "note":"Portugal and Britain account for ~70% of all enslaved Africans transported to the Americas; centres Glasgow, Bristol, Manchester, London."
-  },
-  "enslavedSeizedTotal": {"title":"Total Africans seized for the transatlantic trade (incl. died in capture, marches, detention, Middle Passage)","unit":"people","page":11,"low":14000000,"high":20000000,"landed":10000000,"note":"At least 10 million landed in the Americas & Caribbean; plausibly 14–20 million seized in total. African population ~unchanged vs +300% in Asia & Europe 17th–19th c.","source":"p.11–12; Walter Rodney"},
-  "demographic": {"title":"Population growth 17th–19th century","unit":"%","page":11,"asiaEurope":300,"africa":0,"note":"Asia & Europe grew 300%+; African population remained almost the same or declined; recovery only after abolition & independence.","source":"p.11–12"},
-  "jamaicaFactorConcentration": {"title":"Jamaica arrivals, 28 Sep 1751 – 27 May 1752","unit":"people","page":41,"ships":31,"arrived":7123,"firms":9,"topThreeShare":83,"note":"Seven thousand one hundred twenty-three enslaved Africans survived the Atlantic; delivered to nine factorage firms; three firms handle 83%.","source":"p.41–42"},
-  "hibbert": {"title":"Thomas Hibbert, 'slave factor', 1764–1774","unit":"people","page":41,"ships":61,"handled":16254,"note":"Operation handled cargo for 61 ships & sale of 16,254 enslaved Africans; later co-founds Hibbert, Purrier & Horton (London).","source":"p.41"},
-  "jamaicaEnslavedPop": {"title":"Enslaved population in Jamaica's five leading sugar parishes, 1720s→1788","unit":"×","page":37,"factor":6,"note":"Increases more than sixfold; +206% in parishes ≥65% sugar vs +46% hinterland 1734–1788.","source":"p.37"},
-  "jamaicanWealth": {"title":"Value of Jamaica's enslaved population, 18th century","unit":"£","page":41,"avgPerPerson":30,"total":25000000,"note":"Avg ~£30/person; ~£25 million; closely matches Jamaica's total recorded wealth in 1774.","source":"p.41"},
-  "silverWorldShare": {"title":"Spanish-American silver share of world supply, 1494–1850","unit":"%","page":46,"value":80,"note":"Especially Mexico & Potosí (Bolivia); commodity money; ~real de a ocho.","source":"p.46"},
-  "musketExchange": {"title":"Muskets exchanged per enslaved person","unit":"muskets","page":43,"source":"p.43; Eltis & Jennings",
-    "series":[{"period":"early 1701–1750","value":2},{"period":"end of 18th century","value":15}],
-    "note":"One enslaved person for two muskets early 1700s → at least fifteen by century's end; profits compensated rising prices."
-  },
-  "barterTerms": {"title":"Britain gross barter terms of trade with Africa (base 100, 1701–1750)","unit":"index","page":43,"source":"p.43; Eltis & Jennings",
-    "series":[{"year":1701,"value":100},{"year":1750,"value":112},{"year":1800,"value":40}],
-    "note":"Increased 100→112 then sharply declined to 40 in 1800."
-  },
-  "tariffs": {"title":"Additional tariff to protect British refiners, after India became British colony","unit":"%","page":35,"value":25,"note":"High duties on refined sugar penalise colonial refining; low raw duties; +25% to block Indian sugar; 'not even a nail' in colonies.","source":"p.35–36"},
-  "gangSystem": {"title":"Gang system structure","unit":"years","page":28,
-    "firstGang":"young men & women late teens; most physical work 10–12 years","secondGang":"~20 years; then ~40 worn out","thirdGang":"elderly + young children ('grass gang'); weeding & grass for animals",
-    "holesPerDay":"60–100 planting holes/day (2 cane plants each); 1.25 tonnes manure per acre","shifts":"harvest season: 18–20h shifts, 6 days/week; engenho Sunday rules often unhonoured",
-    "mortality":"two-fifths of newly arrived die within one year (Rev. Robert Robertson); 100% killed in 19 years (Edward Littleton, Barbados); higher mortality than cotton/coffee/tobacco",
-    "source":"p.28–31"
-  },
-  "foundingTimes": {"title":"Foundations predating the Industrial Revolution","page":47,"note":"Dutch guilder (17th–18th c.) then British pound sterling; modern financial system rooted in genocide in the Americas, the enslaved trade & plantation system.","source":"p.47–48"}
+ "sugarProductionAmericas": {
+  "title": "Sugar production in the Americas",
+  "unit": "tonnes",
+  "page": 39,
+  "source": "p.39",
+  "series": [
+   {
+    "year": 1700,
+    "value": 50000,
+    "label": "~50,000 tonnes"
+   },
+   {
+    "year": 1783,
+    "value": 200000,
+    "label": "~200,000 tonnes (close of the American Revolution)"
+   }
+  ],
+  "note": "Rose from approximately 50,000 tonnes in 1700 to around 200,000 tonnes by the close of the American Revolution."
+ },
+ "britishSugarImports": {
+  "title": "British sugar imports",
+  "unit": "hundredweight",
+  "page": 39,
+  "source": "p.39",
+  "series": [
+   {
+    "year": 1700,
+    "value": 430000,
+    "tonnes": 21845,
+    "label": "430,000 hundredweight (~21,845 t)"
+   },
+   {
+    "year": 1800,
+    "value": 3000000,
+    "tonnes": 152407,
+    "label": "3,000,000 hundredweight (~152,407 t)"
+   }
+  ],
+  "note": "Sevenfold increase 1700–1800. All monetary values in pounds sterling unless noted."
+ },
+ "barbadosSugarShare": {
+  "title": "Sugar products share of Barbados total exports",
+  "unit": "%",
+  "page": 35,
+  "source": "p.35; David Eltis",
+  "series": [
+   {
+    "period": "1665–1666",
+    "value": 91.2
+   },
+   {
+    "period": "1688",
+    "value": 91.6
+   },
+   {
+    "period": "1690–1691",
+    "value": 91.6
+   },
+   {
+    "period": "1699–1701",
+    "value": 95.6
+   }
+  ]
+ },
+ "jamaicaToBritain": {
+  "title": "Jamaica sugar exports destined for Britain",
+  "unit": "%",
+  "page": 35,
+  "value": 95,
+  "note": "Between 1682 and 1701, Britain is the destination for more than 95% of Jamaica's sugar exports.",
+  "source": "p.35"
+ },
+ "rawSugarBritishImports": {
+  "title": "Raw sugar share of all British imports, 1774",
+  "unit": "%",
+  "page": 39,
+  "value": 20,
+  "note": "Raw sugar accounts for one-fifth of all British imports, surpassing all other imported goods by a wide margin.",
+  "source": "p.39"
+ },
+ "planterReceipts": {
+  "title": "Caribbean planters' gross receipts from sugar exports to Britain, 1713→1775",
+  "unit": "×",
+  "page": 39,
+  "from": 1713,
+  "to": 1775,
+  "factor": 3.2,
+  "note": "Rose by a factor of 3.2, driven by rising demand in England and profitable re-export of refined sugar.",
+  "source": "p.39"
+ },
+ "britishValueAdded": {
+  "title": "Total value added to the British economy by sugar production & trade",
+  "unit": "£million",
+  "page": 38,
+  "source": "p.38; Klas Rönnbäck",
+  "series": [
+   {
+    "period": "first decade of the 18th century",
+    "value": 0.5
+   },
+   {
+    "period": "a century later",
+    "value": 5.5
+   }
+  ],
+  "note": "Captures surplus appropriated at each stage: cultivation, refining, re-export, final sale. £0.5m → £5.5m."
+ },
+ "jamaicanSurplus": {
+  "title": "Surplus appropriated by Jamaican plantation owners, share of subsistence costs",
+  "unit": "%",
+  "page": 38,
+  "source": "p.38; Klas Rönnbäck",
+  "series": [
+   {
+    "year": 1750,
+    "value": 40
+   },
+   {
+    "year": 1790,
+    "value": 100
+   }
+  ],
+  "note": "Surplus extracted equals what is spent on subsistence of enslaved people by 1790."
+ },
+ "muscovadoVsRefined": {
+  "title": "Price of refined sugar in England vs muscovado in Jamaica",
+  "unit": "×",
+  "page": 38,
+  "factor": 4,
+  "note": "Fourfold difference 'completely out of proportion' to transport & refining cost → transfer pricing shifting profits to Britain.",
+  "source": "p.38"
+ },
+ "colonyProfitability": {
+  "title": "Colonial vs 'mother country' investment profitability",
+  "unit": "×",
+  "page": 37,
+  "low": 4,
+  "high": 7,
+  "note": "Investments in the colonies are four to seven times more profitable than in England.",
+  "source": "p.37"
+ },
+ "britishCapitalSlavery": {
+  "title": "British capital derived from enslaved-trade profits, 1770",
+  "unit": "%",
+  "page": 37,
+  "value": 40,
+  "note": "Stanley Engerman estimate: close to 40% of capital for Britain's commercial and industrial expansion.",
+  "source": "p.37"
+ },
+ "britishNationalIncome": {
+  "title": "Combined enslaved-trade + sugar profits, share of British national income",
+  "unit": "%",
+  "page": 37,
+  "value": 5,
+  "note": "~5%; underestimates total usurped profits; refining & re-export profits not added.",
+  "source": "p.37"
+ },
+ "britishTransatlantic": {
+  "title": "British transatlantic slave trade, 1640–1807",
+  "unit": "people",
+  "page": 40,
+  "source": "p.40",
+  "total": 3100000,
+  "survivedAtlantic": 2700000,
+  "shareOfAllEnslavedAfricansToAmericas": 70,
+  "note": "Portugal and Britain account for ~70% of all enslaved Africans transported to the Americas; centres Glasgow, Bristol, Manchester, London."
+ },
+ "enslavedSeizedTotal": {
+  "title": "Total Africans seized for the transatlantic trade (incl. died in capture, marches, detention, Middle Passage)",
+  "unit": "people",
+  "page": 11,
+  "low": 14000000,
+  "high": 20000000,
+  "landed": 10000000,
+  "note": "At least 10 million landed in the Americas & Caribbean; plausibly 14–20 million seized in total. African population ~unchanged vs +300% in Asia & Europe 17th–19th c.",
+  "source": "p.11–12; Walter Rodney"
+ },
+ "demographic": {
+  "title": "Population growth 17th–19th century",
+  "unit": "%",
+  "page": 11,
+  "asiaEurope": 300,
+  "africa": 0,
+  "note": "Asia & Europe grew 300%+; African population remained almost the same or declined; recovery only after abolition & independence.",
+  "source": "p.11–12"
+ },
+ "jamaicaFactorConcentration": {
+  "title": "Jamaica arrivals, 28 Sep 1751 – 27 May 1752",
+  "unit": "people",
+  "page": 41,
+  "ships": 31,
+  "arrived": 7123,
+  "firms": 9,
+  "topThreeShare": 83,
+  "note": "Seven thousand one hundred twenty-three enslaved Africans survived the Atlantic; delivered to nine factorage firms; three firms handle 83%.",
+  "source": "p.41–42"
+ },
+ "hibbert": {
+  "title": "Thomas Hibbert, 'slave factor', 1764–1774",
+  "unit": "people",
+  "page": 41,
+  "ships": 61,
+  "handled": 16254,
+  "note": "Operation handled cargo for 61 ships & sale of 16,254 enslaved Africans; later co-founds Hibbert, Purrier & Horton (London).",
+  "source": "p.41"
+ },
+ "jamaicaEnslavedPop": {
+  "title": "Enslaved population in Jamaica's five leading sugar parishes, 1720s→1788",
+  "unit": "×",
+  "page": 37,
+  "factor": 6,
+  "note": "Increases more than sixfold; +206% in parishes ≥65% sugar vs +46% hinterland 1734–1788.",
+  "source": "p.37"
+ },
+ "jamaicanWealth": {
+  "title": "Value of Jamaica's enslaved population, 18th century",
+  "unit": "£",
+  "page": 41,
+  "avgPerPerson": 30,
+  "total": 25000000,
+  "note": "Avg ~£30/person; ~£25 million; closely matches Jamaica's total recorded wealth in 1774.",
+  "source": "p.41"
+ },
+ "silverWorldShare": {
+  "title": "Spanish-American silver share of world supply, 1494–1850",
+  "unit": "%",
+  "page": 46,
+  "value": 80,
+  "note": "Especially Mexico & Potosí (Bolivia); commodity money; ~real de a ocho.",
+  "source": "p.46"
+ },
+ "musketExchange": {
+  "title": "Muskets exchanged per enslaved person",
+  "unit": "muskets",
+  "page": 43,
+  "source": "p.43; Eltis & Jennings",
+  "series": [
+   {
+    "period": "early 1700s",
+    "value": 2
+   },
+   {
+    "period": "end of 18th century",
+    "value": 15
+   }
+  ],
+  "note": "One enslaved person for two muskets early 1700s → at least fifteen by century's end; profits compensated rising prices."
+ },
+ "barterTerms": {
+  "title": "Britain gross barter terms of trade with Africa (base 100, 1701–1750)",
+  "unit": "index",
+  "page": 43,
+  "source": "p.43; Eltis & Jennings",
+  "series": [
+   {
+    "year": 1701,
+    "value": 100
+   },
+   {
+    "year": 1750,
+    "value": 112
+   },
+   {
+    "year": 1800,
+    "value": 40
+   }
+  ],
+  "note": "Increased 100→112 then sharply declined to 40 in 1800."
+ },
+ "tariffs": {
+  "title": "Additional tariff to protect British refiners, after India became British colony",
+  "unit": "%",
+  "page": 35,
+  "value": 25,
+  "note": "High duties on refined sugar penalise colonial refining; low raw duties; +25% to block Indian sugar; 'not even a nail' in colonies.",
+  "source": "p.35–36"
+ },
+ "gangSystem": {
+  "title": "Gang system structure",
+  "unit": "years",
+  "page": 28,
+  "firstGang": "young men & women late teens; most physical work 10–12 years",
+  "secondGang": "~20 years; then ~40 worn out",
+  "thirdGang": "elderly + young children ('grass gang'); weeding & grass for animals",
+  "holesPerDay": "60–100 planting holes/day (2 cane plants each); 1.25 tonnes manure per acre",
+  "shifts": "harvest season: 18–20h shifts, 6 days/week; engenho Sunday rules often unhonoured",
+  "mortality": "two-fifths of newly arrived die within one year (Rev. Robert Robertson); 100% killed in 19 years (Edward Littleton, Barbados); higher mortality than cotton/coffee/tobacco",
+  "source": "p.28–31"
+ },
+ "foundingTimes": {
+  "title": "Foundations predating the Industrial Revolution",
+  "page": 47,
+  "note": "Dutch guilder (17th–18th c.) then British pound sterling; modern financial system rooted in genocide in the Americas, the enslaved trade & plantation system.",
+  "source": "p.47–48"
+ }
 }
