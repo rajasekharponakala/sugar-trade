@@ -120,7 +120,7 @@ async function initTimeline(){
     const list = events.filter(e => (!state.theme || e.theme === state.theme) && (!state.region || e.region === state.region));
     $('#timelineCount').textContent = `${list.length} of ${events.length} events`;
     track.innerHTML = list.map((e, i) => `
-      <button class="tl-event" role="listitem" aria-pressed="false" data-i="${i}" data-theme="${e.theme}">
+      <button class="tl-event" aria-pressed="false" data-i="${i}" data-theme="${e.theme}">
         <span class="dot" aria-hidden="true"></span>
         <span class="card ${i % 2 === 0 ? 'top' : 'bottom'}">
           <span class="tl-year">${e.year}</span>
@@ -159,20 +159,16 @@ async function initTimeline(){
 
 /* ---------- Caribbean colonial powers ---------- */
 const CARIB = [
-  { territory:'Hispaniola', power:'Spain', start:1492, end:1697, note:'Spanish capture 1490s–early 1600s' },
+  { territory:'Hispaniola', power:'Spain', start:1490, end:1697, note:'Spanish capture 1490s–early 1600s' },
   { territory:'Hispaniola (western third)', power:'France', start:1697, end:1804, note:'Treaty of Rijswijk 1697 → Saint-Domingue; now Haiti' },
-  { territory:'Jamaica', power:'Spain', start:1494, end:1655, note:'Captured by Spain 1490s' },
+  { territory:'Jamaica', power:'Spain', start:1490, end:1655, note:'Captured by Spain 1490s' },
   { territory:'Jamaica', power:'England', start:1655, end:1900, note:'Seized from Spain 1655' },
-  { territory:'Trinidad', power:'Spain', start:1498, end:1900, note:'Captured by Spain 1490s–early 1600s' },
-  { territory:'Puerto Rico', power:'Spain', start:1493, end:1900, note:'Captured by Spain 1490s–early 1600s' },
-  { territory:'Cuba', power:'Spain', start:1492, end:1900, note:'Spanish' },
+  { territory:'Trinidad', power:'Spain', start:1490, end:1900, note:'Captured by Spain 1490s–early 1600s' },
+  { territory:'Puerto Rico', power:'Spain', start:1490, end:1900, note:'Captured by Spain 1490s–early 1600s' },
   { territory:'Barbados', power:'England', start:1625, end:1900, note:'Claimed 1625; settled 1627' },
   { territory:'Guadeloupe', power:'France', start:1635, end:1900, note:'French colony 1635' },
   { territory:'Martinique', power:'France', start:1635, end:1900, note:'French colony 1635' },
-  { territory:'Essequibo', power:'Netherlands', start:1616, end:1900, note:'Dutch colony from 1616 (Guiana coast)' },
-  { territory:'Suriname', power:'Netherlands', start:1667, end:1900, note:'Dutch Guiana' },
-  { territory:'Berbice', power:'Netherlands', start:1627, end:1900, note:'Dutch Guiana coast' },
-  { territory:'Curaçao', power:'Netherlands', start:1634, end:1900, note:'Dutch slave-trade network' }
+  { territory:'Essequibo', power:'Netherlands', start:1616, end:1900, note:'Dutch colony from 1616 (Guiana coast); Suriname/Dutch Guiana also held' }
 ];
 const POWERS = ['Spain','Portugal','England','France','Netherlands'];
 function initCaribbean(){
@@ -183,9 +179,9 @@ function initCaribbean(){
     const active = CARIB.filter(c => year >= c.start && year < c.end);
     list.innerHTML = POWERS.map(p => {
       const items = active.filter(c => c.power === p);
-      return `<div class="power-card"><h4>${p}<span>${items.length}</span></h4>
+      return `<div class="power-card"><h3>${p}<span>${items.length}</span></h3>
         <ul>${items.length ? items.map(c => `<li class="active" title="${esc(c.note)}">${esc(c.territory)} <span class="muted">· ${c.start}</span></li>`).join('') : '<li class="muted">—</li>'}</ul></div>`;
-    }).join('') + `<div class="power-card"><h4>Note</h4><p class="muted" style="font-size:12.5px;margin:0">Five main colonial powers (p.24). Portugal: Brazil &amp; Atlantic islands. Control shifts noted where the study gives dates. Simplified.</p></div>`;
+    }).join('') + `<div class="power-card"><h3>Note</h3><p class="muted" style="font-size:12.5px;margin:0">Five main colonial powers (p.24). Portugal: Brazil &amp; Atlantic islands. Control shifts noted where the study gives dates. Simplified.</p></div>`;
   }
   slider.addEventListener('input', render);
   play.addEventListener('click', () => {
@@ -200,7 +196,7 @@ function initCaribbean(){
 async function initSugarFlow(){
   const steps = await load('assets/data/sugarFlow.json');
   const flow = $('#sugarFlow'); const detail = $('#sugarFlowDetail');
-  flow.innerHTML = steps.map((s, i) => `<li data-i="${i}"><h4>${esc(s.title)}</h4><p>${esc(s.detail.slice(0, 90))}${s.detail.length > 90 ? '…' : ''}</p></li>`).join('');
+  flow.innerHTML = steps.map((s, i) => `<li data-i="${i}"><h3>${esc(s.title)}</h3><p>${esc(s.detail.slice(0, 90))}${s.detail.length > 90 ? '…' : ''}</p></li>`).join('');
   function select(i){
     $$('li', flow).forEach(li => li.classList.toggle('active', +li.dataset.i === i));
     const s = steps[i];
@@ -225,7 +221,7 @@ async function initSugarFlow(){
 }
 
 /* ---------- charts ---------- */
-function barChart(series, { valueKey = 'value', labelKey = 'period', xLabelKey = null } = {}){
+function barChart(series, { valueKey = 'value', labelKey = 'period', xLabelKey = null } = {}){ const _label='Bar chart';
   const W = 320, H = 180, pad = 34, max = Math.max(...series.map(s => s[valueKey])) * 1.12 || 1;
   const bw = (W - pad * 1.5) / series.length;
   const label = (s) => esc(String(s[xLabelKey || labelKey] ?? s.year ?? s.period ?? ''));
@@ -235,7 +231,7 @@ function barChart(series, { valueKey = 'value', labelKey = 'period', xLabelKey =
       <text class="bar-value" x="${x + bw * 0.38}" y="${y - 4}" text-anchor="middle">${compact(s[valueKey])}</text>
       <text class="bar-label" x="${x + bw * 0.38}" y="${H - pad + 14}" text-anchor="middle">${label(s)}</text>`;
   }).join('');
-  return `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" role="img"><line class="axis" x1="${pad}" y1="${H - pad}" x2="${W - 8}" y2="${H - pad}"/>${bars}</svg>`;
+  return `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Bar chart"><line class="axis" x1="${pad}" y1="${H - pad}" x2="${W - 8}" y2="${H - pad}"/>${bars}</svg>`;
 }
 function lineChart(series, { valueKey = 'value' } = {}){
   const W = 320, H = 180, pad = 34; const xs = series.map((_, i) => i);
@@ -246,7 +242,7 @@ function lineChart(series, { valueKey = 'value' } = {}){
   const path = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
   const area = `M${pts[0][0]},${H - pad} ` + pts.map(p => 'L' + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ') + ` L${pts[pts.length-1][0]},${H - pad} Z`;
   const dots = series.map((s, i) => `<circle class="dot-pt" cx="${X(i)}" cy="${Y(s[valueKey])}" r="4"><title>${esc(String(s.year ?? s.period ?? ''))}: ${fmt(s[valueKey])}</title></circle><text class="bar-label" x="${X(i)}" y="${H - pad + 14}" text-anchor="middle">${esc(String(s.year ?? s.period ?? ''))}</text>`).join('');
-  return `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" role="img"><line class="axis" x1="${pad}" y1="${H - pad}" x2="${W - 8}" y2="${H - pad}"/><path class="area-path" d="${area}"/><path class="line-path" d="${path}"/>${dots}</svg>`;
+  return `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Line chart"><line class="axis" x1="${pad}" y1="${H - pad}" x2="${W - 8}" y2="${H - pad}"/><path class="area-path" d="${area}"/><path class="line-path" d="${path}"/>${dots}</svg>`;
 }
 function compact(n){ if (n >= 1e6) return (n / 1e6).toFixed(n % 1e6 ? 1 : 0) + 'M'; if (n >= 1e3) return (n / 1e3).toFixed(n % 1e3 ? 1 : 0) + 'k'; return fmt(n); }
 
