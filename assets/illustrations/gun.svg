@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" role="img" aria-label="Musket">
+<path d="M10 58 L86 58 L86 66 L10 66 Z" fill="#3a3a3a"/><rect x="86" y="54" width="24" height="16" rx="3" fill="#3a3a3a"/>
+<path d="M30 58 L30 78 L44 78 L44 58 Z" fill="#006080"/><path d="M30 78 L44 78 L40 92 L26 92 Z" fill="#006080"/>
+<path d="M96 54 L104 40 L108 42 L100 58 Z" fill="#3a3a3a"/>
+</svg>

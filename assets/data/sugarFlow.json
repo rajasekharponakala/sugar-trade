@@ -1,0 +1,11 @@
+[
+  {"id":"cut","title":"Cut & harvest","detail":"Ripe cane cut; cane processed quickly to prevent sugar content declining; harvest 5–6 months after planting on fertile plantations; simultaneous cutting + transport + crushing + boiling in harvest season.","stage":"field"},
+  {"id":"transport","title":"Transport to crusher","detail":"Cane carried to crushing sites; rails/conveyors later; proximity to rivers & ports lowers cost; enslaved people cart cane.","stage":"field"},
+  {"id":"crush","title":"Crushing","detail":"Fed through rollers into crushing device; juice extracted; dangerous work; arms drawn into rollers; presses hand→3-cylinder→wind/water→steam; two-roller horizontal mill.","stage":"mill"},
+  {"id":"boil","title":"Boiling & concentration","detail":"Juice boiled in series of large vats/cauldrons; concentrated to thick syrup; 'curing'; large fuel requirement; timber or bagasse; copper pans + coal in European refineries; vacuum pans.","stage":"mill"},
+  {"id":"cool","title":"Cool in inverted cones","detail":"Cooled in inverted earthenware cones; separation into sugar loaves and molasses.","stage":"mill"},
+  {"id":"molasses","title":"Molasses separated","detail":"Crystallisation/refining; molasses extracted; molasses → rum (17th c. onward); later centrifuge.","stage":"mill"},
+  {"id":"cure","title":"Curing → loaf","detail":"Poured into sizeable clay pots/moulds; hardened cone-shaped sugar loaves.","stage":"refine"},
+  {"id":"whiten","title":"White sugar","detail":"Clay + water mixture on broad side of cone; molasses drips out; drained; loaves dried on racks; trimmed; wrapped in paper.","stage":"refine"},
+  {"id":"refine","title":"Final refining (Europe)","detail":"Colonies produce brown loaf/muscovado; final whitening in British/Dutch towns; re-export; tax policy; 'not even a nail'; modern plants 'bleach' brown sugar.","stage":"refine"}
+]

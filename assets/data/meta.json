@@ -1,0 +1,23 @@
+{
+  "title": "The Roots of Capitalism",
+  "subtitle": "Slavery and the Sugar Trade",
+  "author": "Prabir Purkayastha",
+  "forewordBy": "Vijay Prashad",
+  "series": "Studies on Historical Materialism",
+  "seriesNumber": "n°1",
+  "publisher": "Tricontinental: Institute for Social Research",
+  "publisherSite": "https://www.thetricontinental.org",
+  "sourcePdf": "https://thetricontinental.org/wp-content/uploads/2026/08/20260828_StudiesHM_Roots-of-Capitalism_EN_Web.pdf",
+  "localPdf": "assets/original/the-roots-of-capitalism.pdf",
+  "license": "CC BY-NC 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "sourceFile": "20260828_StudiesHM_Roots-of-Capitalism_EN_Web.pdf",
+  "pages": 54,
+  "created": "2026-08-28",
+  "language": "en",
+  "interactiveSite": {
+    "name": "Sugar & Slavery — The Roots of Capitalism",
+    "description": "An interactive visual companion to Prabir Purkayastha's study on sugar, enslavement, and the origins of modern capitalism.",
+    "repository": "sugar-trade"
+  }
+}

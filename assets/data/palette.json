@@ -1,0 +1,15 @@
+[
+  {"hex":"#006080","name":"Tricontinental teal","role":"Primary accent; full-bleed cover; headings; duotone; links","hsv":"195°,100%,50%"},
+  {"hex":"#005060","name":"Deep teal","role":"Secondary accent; shadows","hsv":"190°,100%,38%"},
+  {"hex":"#106080","name":"Teal variant","role":"Accent on paper","hsv":"197°,88%,50%"},
+  {"hex":"#0080a0","name":"Cyan accent","role":"Links; highlights","hsv":"192°,100%,63%"},
+  {"hex":"#5090a0","name":"Muted teal","role":"Secondary strokes","hsv":"192°,50%,63%"},
+  {"hex":"#70a0b0","name":"Pale teal","role":"Tints; backgrounds","hsv":"195°,36%,69%"},
+  {"hex":"#f0f0f0","name":"Paper","role":"Page background","hsv":"0°,0%,94%"},
+  {"hex":"#ffffff","name":"White","role":"Cards; reversed text on teal","hsv":"0°,0%,100%"},
+  {"hex":"#f0f0e0","name":"Warm paper","role":"Subtle warmth","hsv":"60°,7%,94%"},
+  {"hex":"#e0e0e0","name":"Gray 1","role":"Rules; subtle fills","hsv":"0°,0%,88%"},
+  {"hex":"#d0d0d0","name":"Gray 2","role":"Borders","hsv":"0°,0%,82%"},
+  {"hex":"#c0c0c0","name":"Gray 3","role":"Muted","hsv":"0°,0%,75%"},
+  {"hex":"#111111","name":"Ink","role":"Body text; black in illustrations","hsv":"0°,0%,7%"}
+]

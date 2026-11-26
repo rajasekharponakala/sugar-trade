@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Roots of Capitalism — Slavery and the Sugar Trade · Interactive Visual Study</title>
+<meta name="description" content="An interactive visual companion to Prabir Purkayastha's The Roots of Capitalism: Slavery and the Sugar Trade. Timelines, maps, illustrations and data on sugar, enslavement, and the origins of modern capitalism.">
+<meta name="author" content="Prabir Purkayastha (original study); interactive adaptation">
+<meta name="theme-color" content="#006080">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="./">
+<meta property="og:title" content="The Roots of Capitalism — Slavery and the Sugar Trade">
+<meta property="og:description" content="Interactive timelines, maps, illustrations & data on sugar, enslavement and the origins of capitalism.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Roots of Capitalism — Slavery and the Sugar Trade">
+<meta name="twitter:description" content="Interactive visual study: sugar, enslavement, capitalism.">
+<meta name="twitter:image" content="assets/img/og-image.png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/LibreCaslonText-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Overpass-normal-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"The Roots of Capitalism","alternateName":"Slavery and the Sugar Trade","description":"Interactive visual companion to Prabir Purkayastha's study.","inLanguage":"en"}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top" aria-label="Home">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text"><strong>Roots of Capitalism</strong><span>Slavery &amp; the Sugar Trade</span></span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#narrative">Myth vs Fact</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#map">Map</a>
+    <a href="#sugar">Sugar</a>
+    <a href="#data">Data</a>
+    <a href="#read">Read</a>
+    <a href="#methods">Methods</a>
+    <a href="#sources">Sources</a>
+  </nav>
+  <div class="topbar-actions">
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+    <a class="btn btn-ghost" href="assets/original/the-roots-of-capitalism.pdf" download>Original PDF</a>
+  </div>
+</header>
+
+<div class="progress" id="progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="hero-pattern" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="cane" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+          <rect width="80" height="80" fill="none"/>
+          <path d="M10 70 C10 30 20 10 30 10 C40 10 50 30 50 70" stroke="#ffffff" stroke-opacity="0.06" fill="none" stroke-width="2"/>
+          <path d="M30 70 C30 40 40 20 50 20" stroke="#ffffff" stroke-opacity="0.05" fill="none" stroke-width="1.5"/>
+        </pattern>
+      </defs>
+      <rect width="1200" height="800" fill="url(#cane)"/>
+    </svg>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow" data-anim>Studies on Historical Materialism · n°1 · Tricontinental: Institute for Social Research</p>
+    <h1 id="hero-title" class="hero-title" data-anim>
+      <span class="line">The Roots of</span>
+      <span class="line accent">Capitalism</span>
+      <span class="line sub">Slavery &amp; the Sugar Trade</span>
+    </h1>
+    <p class="hero-author" data-anim>Prabir Purkayastha · Foreword by Vijay Prashad</p>
+    <p class="hero-lede" data-anim>
+      Capitalism did not emerge from the gentle unfolding of markets and machines —
+      but from the brutal reorganisation of the world through conquest, enslavement, and extraction.
+      Trace <strong>sugar</strong>, <strong>enslaved labour</strong>, and the <strong>making of a global financial system</strong> on an interactive map and timeline.
+    </p>
+    <div class="hero-actions" data-anim>
+      <a class="btn btn-primary" href="#narrative">Begin the story <span aria-hidden="true">→</span></a>
+      <a class="btn btn-secondary" href="#map">Explore the map</a>
+      <a class="btn btn-secondary" href="assets/original/the-roots-of-capitalism.pdf" download>Download original (CC&nbsp;BY‑NC)</a>
+    </div>
+    <ul class="hero-stats" data-anim aria-label="Key figures">
+      <li><span class="stat-num" data-count="3100000">0</span><span class="stat-label">British‑transported Africans, 1640–1807</span></li>
+      <li><span class="stat-num" data-count="10000000" data-prefix="≥">0</span><span class="stat-label">Africans landed, transatlantic trade</span></li>
+      <li><span class="stat-num" data-count="40" data-suffix="%">0</span><span class="stat-label">British capital from slavery profits, 1770</span></li>
+      <li><span class="stat-num" data-count="7" data-suffix="×">0</span><span class="stat-label">British sugar imports, 1700→1800</span></li>
+    </ul>
+    <p class="hero-hint" data-anim><span class="mouse" aria-hidden="true"></span> Scroll · use keyboard · explore</p>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0,64 C240,120 480,8 720,48 C960,88 1200,8 1440,56 L1440,120 L0,120 Z" fill="var(--paper)"/></svg>
+</section>
+
+<!-- ============ MYTH VS FACT ============ -->
+<section class="section" id="narrative" aria-labelledby="narrative-title">
+  <div class="section-head">
+    <p class="kicker">§01 · The Conventional Narrative</p>
+    <h2 id="narrative-title">Myth vs. fact</h2>
+    <p class="section-lede">The “rise of the West” story airbrushes out looting, genocide, and slavery. Flip each claim to see what the historical record says.</p>
+  </div>
+  <div class="myth-grid" id="mythGrid"></div>
+  <p class="source-note">Source: pp. 9–14. Scholars named in text: Eric Williams, Walter Rodney, C. L. R. James, Joseph Inikori; Marx; Claude Meillassoux; Sidney Mintz; Sven Beckert &amp; Seth Rockman.</p>
+</section>
+
+<!-- ============ FOREWORD / VOICES ============ -->
+<section class="section section-quote" id="voices" aria-labelledby="voices-title">
+  <div class="section-head"><p class="kicker">Foreword · Vijay Prashad</p><h2 id="voices-title">“Whose history is being told?”</h2></div>
+  <div class="quote-carousel" id="quoteCarousel" aria-live="polite"></div>
+  <div class="carousel-controls">
+    <button class="icon-btn" id="quotePrev" aria-label="Previous quote">‹</button>
+    <button class="icon-btn" id="quoteNext" aria-label="Next quote">›</button>
+  </div>
+  <p class="credit-note">Prabir Purkayastha wrote much of this study during <strong>225-day incarceration</strong> in Rohini Central Jail, Delhi, on scraps of paper. Term note (p.7): the study uses <em>“enslaved”</em>, not “slave” — “Language is not neutral; it either reinforces or resists power.”</p>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="section" id="timeline" aria-labelledby="timeline-title">
+  <div class="section-head">
+    <p class="kicker">§02–§08 · 1494–1850 (+800)</p>
+    <h2 id="timeline-title">Interactive timeline</h2>
+    <p class="section-lede">Filter by theme and region. Every event cites the page in the original study.</p>
+  </div>
+  <div class="timeline-controls" role="group" aria-label="Timeline filters">
+    <div class="filter-group" id="themeFilters" aria-label="Theme filters"></div>
+    <div class="filter-group" id="regionFilters" aria-label="Region filters"></div>
+    <button class="btn btn-ghost" id="timelineReset">Reset filters</button>
+    <span class="timeline-count" id="timelineCount" aria-live="polite"></span>
+  </div>
+  <div class="timeline-wrap">
+    <div class="timeline-scroller" id="timelineScroller" tabindex="0" role="list" aria-label="Events">
+      <div class="timeline-track" id="timelineTrack"></div>
+    </div>
+  </div>
+  <div class="timeline-detail" id="timelineDetail" role="status" aria-live="polite">
+    <p class="muted">Select an event to read details. Keyboard: <kbd>←</kbd> <kbd>→</kbd> to move, <kbd>Enter</kbd> to open.</p>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section class="section section-map" id="map" aria-labelledby="map-title">
+  <div class="section-head">
+    <p class="kicker">§02–§08 · Geography</p>
+    <h2 id="map-title">The sugar-and-slavery world</h2>
+    <p class="section-lede">Triangular trade, plantations, enslaved-trade ports, refining hubs, silver mines, colonial powers. Projection toggle honours p.49: <em>each projection carries its own ideological bias, Mercator more than others.</em></p>
+  </div>
+  <div class="map-shell">
+    <div class="map-controls">
+      <fieldset class="projection-toggle"><legend>Projection</legend>
+        <label><input type="radio" name="proj" value="mollweide" checked> Mollweide (equal‑area)</label>
+        <label><input type="radio" name="proj" value="mercator"> Mercator</label>
+      </fieldset>
+      <fieldset class="layer-toggles" id="layerToggles"><legend>Layers</legend></fieldset>
+      <div class="map-search"><label>Find <input type="search" id="mapSearch" placeholder="e.g. Kingston, Potosí…"></label></div>
+      <div class="map-buttons">
+        <button class="btn btn-ghost" id="mapReset">Reset view</button>
+        <button class="btn btn-ghost" id="routePlay" aria-pressed="false">▶ Animate routes</button>
+      </div>
+    </div>
+    <div class="map-stage">
+      <svg id="mapSvg" role="img" aria-label="Interactive map of the sugar and slavery world" viewBox="0 0 960 540"></svg>
+      <div class="map-tooltip" id="mapTooltip" role="status" hidden></div>
+      <div class="map-legend" id="mapLegend" aria-label="Legend"></div>
+    </div>
+    <p class="source-note">Geography simplified; coordinates approximate. Map data: world-atlas (Natural Earth). Study maps converted Mercator→Mollweide (p.49). Events/colonial control from pp. 12–13, 24–26, 34–48.</p>
+  </div>
+</section>
+
+<!-- ============ CARIBBEAN COLONIAL POWERS TIMELINE ============ -->
+<section class="section" id="caribbean" aria-labelledby="caribbean-title">
+  <div class="section-head">
+    <p class="kicker">§04 · pp. 24–26</p>
+    <h2 id="caribbean-title">Shifting colonial control in the Caribbean</h2>
+    <p class="section-lede">Five main colonial powers — Spain, Portugal, the Netherlands, France, England. Scrub the year to watch control shift.</p>
+  </div>
+  <div class="caribbean-controls">
+    <label for="caribYear">Year <output id="caribYearOut">1500</output></label>
+    <input type="range" id="caribYear" min="1490" max="1800" value="1500" step="1">
+    <button class="btn btn-ghost" id="caribPlay" aria-pressed="false">▶ Play</button>
+  </div>
+  <div class="caribbean-list" id="caribbeanList" aria-live="polite"></div>
+</section>
+
+<!-- ============ SUGAR PRODUCTION FLOW ============ -->
+<section class="section" id="sugar" aria-labelledby="sugar-title">
+  <div class="section-head">
+    <p class="kicker">§02 §05 · pp. 15–33 · “diagram 1” (p. 19)</p>
+    <h2 id="sugar-title">From cane to sugar — field and factory</h2>
+    <p class="section-lede">Step through the sugar-processing workflow on the plantation. “These were agricultural undertakings… a synthesis of field and factory.” (Sidney Mintz, p.27)</p>
+  </div>
+  <div class="flow-wrap">
+    <ol class="flow" id="sugarFlow" aria-label="Sugar processing steps"></ol>
+  </div>
+  <div class="flow-detail" id="sugarFlowDetail" role="status" aria-live="polite"></div>
+
+  <h3 class="subhead">The gang system</h3>
+  <div class="gang-grid" id="gangGrid"></div>
+
+  <h3 class="subhead">Technology timeline</h3>
+  <ol class="tech-list" id="techList"></ol>
+</section>
+
+<!-- ============ DATA / CHARTS ============ -->
+<section class="section section-data" id="data" aria-labelledby="data-title">
+  <div class="section-head">
+    <p class="kicker">§06 §07 §08 · pp. 34–48</p>
+    <h2 id="data-title">Data: sugar, slavery, capital</h2>
+    <p class="section-lede">Interactive charts from figures stated in the study. Hover for detail; toggle “View data”. All numbers traceable to a page.</p>
+  </div>
+  <div class="chart-grid" id="chartGrid"></div>
+</section>
+
+<!-- ============ KEY FIGURES ============ -->
+<section class="section" id="figures" aria-labelledby="figures-title">
+  <div class="section-head"><p class="kicker">Key numbers</p><h2 id="figures-title">By the numbers</h2></div>
+  <div class="figure-grid" id="figureGrid"></div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section class="section" id="glossary" aria-labelledby="glossary-title">
+  <div class="section-head"><p class="kicker">Language</p><h2 id="glossary-title">Glossary</h2><p class="section-lede">Key terms. “Language is not neutral.”</p></div>
+  <dl class="glossary" id="glossaryList"></dl>
+</section>
+
+
+<!-- ============ ORIGINAL SVG ILLUSTRATIONS ============ -->
+<section class="section" id="originals" aria-labelledby="originals-title">
+  <div class="section-head"><p class="kicker">Our own illustrations</p><h2 id="originals-title">Original SVG illustrations</h2><p class="section-lede">Hand‑drawn vector artwork in the PDF's teal‑on‑paper language.</p></div>
+  <div class="gallery illustrations">
+    <figure><img src="assets/illustrations/sugarcane.svg" alt="Sugarcane"><figcaption>Sugarcane — the crop that made capitalism global.</figcaption></figure>
+    <figure><img src="assets/illustrations/mill.svg" alt="Sugar mill rollers"><figcaption>Crushing mill — field and factory.</figcaption></figure>
+    <figure><img src="assets/illustrations/sugarloaf.svg" alt="Sugar loaf"><figcaption>Cone‑shaped sugar loaf &amp; mould.</figcaption></figure>
+    <figure><img src="assets/illustrations/crystal.svg" alt="Sugar crystals"><figcaption>Refined sugar crystals.</figcaption></figure>
+    <figure><img src="assets/illustrations/ship.svg" alt="Sailing ship"><figcaption>Slave ship / sugar ship; shipbuilding.</figcaption></figure>
+    <figure><img src="assets/illustrations/gun.svg" alt="Musket"><figcaption>Firearm — the “iron” in gun‑slave‑money.</figcaption></figure>
+    <figure><img src="assets/illustrations/coin.svg" alt="Spanish silver dollar"><figcaption>Spanish silver dollar (real de a ocho).</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ ORIGINAL PDF ILLUSTRATIONS ============ -->
+<section class="section" id="illustrations" aria-labelledby="illustrations-title">
+  <div class="section-head"><p class="kicker">From the original study</p><h2 id="illustrations-title">Illustrations, maps &amp; diagrams</h2><p class="section-lede">Figures embedded in the PDF (CC BY‑NC 4.0, Tricontinental). Shown alongside our original interactive versions.</p></div>
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<!-- ============ READ ORIGINAL ============ -->
+<section class="section" id="read" aria-labelledby="read-title">
+  <div class="section-head"><p class="kicker">Full text</p><h2 id="read-title">Read the original study</h2></div>
+  <div class="read-grid">
+    <div class="read-meta">
+      <h3>The Roots of Capitalism: Slavery and the Sugar Trade</h3>
+      <p>Prabir Purkayastha · Foreword by Vijay Prashad · Studies on Historical Materialism n°1 · Tricontinental · 54 pages · A4 · CC BY‑NC 4.0.</p>
+      <ul class="read-links">
+        <li><a class="btn btn-primary" href="assets/original/the-roots-of-capitalism.pdf" download>Download PDF</a></li>
+        <li><a class="btn btn-secondary" href="https://thetricontinental.org/wp-content/uploads/2026/08/20260828_StudiesHM_Roots-of-Capitalism_EN_Web.pdf" rel="noopener">Original source URL</a></li>
+        <li><a class="btn btn-secondary" href="https://www.thetricontinental.org" rel="noopener">Tricontinental: Institute for Social Research</a></li>
+      </ul>
+      <p class="credit-note">This interactive adaptation is <strong>non‑commercial</strong>, attributes the author, and shares under the same <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="noopener">CC BY‑NC 4.0</a> license.</p>
+    </div>
+    <div class="read-embed">
+      <iframe title="Original study PDF" src="assets/original/the-roots-of-capitalism.pdf" loading="lazy"></iframe>
+      <p class="source-note">If your browser can’t embed PDFs, use “Download PDF”.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UI/UX METHODS ============ -->
+<section class="section" id="methods" aria-labelledby="methods-title">
+  <div class="section-head"><p class="kicker">Design</p><h2 id="methods-title">UI/UX methods &amp; how they reflect the PDF</h2><p class="section-lede">What we built, why, and how it mirrors the visual aesthetic of the original study.</p></div>
+  <div class="methods-grid" id="methodsGrid"></div>
+  <div class="palette" id="palette" aria-label="Colour palette extracted from the PDF"></div>
+  <div class="type-specimen" aria-label="Type specimen">
+    <p class="specimen-serif">Libre Caslon Text — serif body, standing in for Adobe Caslon Pro. <em>Italic for quotations.</em> <strong>Bold for emphasis.</strong></p>
+    <p class="specimen-sans">OVERPASS — condensed signage sans standing in for Font Bureau Interstate. HEADINGS · LABELS · UI · NUMERALS</p>
+  </div>
+</section>
+
+<!-- ============ SOURCES / NOTES ============ -->
+<section class="section" id="sources" aria-labelledby="sources-title">
+  <div class="section-head"><p class="kicker">§09 §10 · pp. 49–53</p><h2 id="sources-title">Acknowledgements &amp; Notes</h2></div>
+  <div class="sources-grid">
+    <div class="ack" id="ack"></div>
+    <div class="notes-wrap">
+      <div class="notes-controls"><label>Filter notes <input type="search" id="notesFilter" placeholder="e.g. Mintz, Rodney…"></label><span id="notesCount"></span></div>
+      <ol class="notes" id="notesList"></ol>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" id="footer">
+  <div class="footer-grid">
+    <div>
+      <strong>The Roots of Capitalism: Slavery and the Sugar Trade</strong>
+      <p>Original study © Prabir Purkayastha &amp; Tricontinental: Institute for Social Research. CC BY‑NC 4.0.</p>
+      <p>Interactive visualization adaptation — non‑commercial, attribution, share‑alike under CC BY‑NC 4.0.</p>
+    </div>
+    <div>
+      <strong>Tricontinental: Institute for Social Research</strong>
+      <p>International, movement‑driven institution focused on stimulating intellectual debate that serves people’s aspirations.</p>
+      <p><a href="https://www.thetricontinental.org" rel="noopener">www.thetricontinental.org</a> · <a href="https://www.eltricontinental.org" rel="noopener">eltricontinental.org</a> · <a href="https://www.otricontinental.org" rel="noopener">otricontinental.org</a></p>
+    </div>
+    <div class="share">
+      <strong>Share</strong>
+      <div class="share-buttons">
+        <button class="icon-btn" data-share="copy" aria-label="Copy link">🔗</button>
+        <a class="icon-btn" data-share="twitter" aria-label="Share on X" rel="noopener" target="_blank">𝕏</a>
+        <a class="icon-btn" data-share="facebook" aria-label="Share on Facebook" rel="noopener" target="_blank">f</a>
+        <a class="icon-btn" data-share="linkedin" aria-label="Share on LinkedIn" rel="noopener" target="_blank">in</a>
+        <a class="icon-btn" data-share="whatsapp" aria-label="Share on WhatsApp" rel="noopener" target="_blank">WA</a>
+      </div>
+      <p class="share-status" id="shareStatus" aria-live="polite"></p>
+    </div>
+  </div>
+  <p class="footer-fine">Built with semantic HTML, CSS &amp; vanilla JS + D3. No tracking. Works offline once loaded. <a href="#methods">UI/UX methods</a>.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+<!-- vendor -->
+<script src="assets/vendor/d3.min.js"></script>
+<script src="assets/vendor/topojson-client.min.js"></script>
+<script src="assets/vendor/d3-geo-projection.min.js"></script>
+<!-- app -->
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

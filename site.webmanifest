@@ -1,0 +1,12 @@
+{
+  "name": "The Roots of Capitalism — Slavery and the Sugar Trade",
+  "short_name": "Roots of Capitalism",
+  "description": "Interactive visual companion to Prabir Purkayastha's study on sugar, enslavement and the origins of capitalism.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#006080",
+  "icons": [
+    {"src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml"}
+  ]
+}

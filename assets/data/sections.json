@@ -1,0 +1,91 @@
+[
+ {
+  "id": "foreword",
+  "number": "00",
+  "title": "Foreword",
+  "short": "Foreword",
+  "author": "Vijay Prashad",
+  "pages": "5–7",
+  "summary": "Capitalism is not the gentle flowering of markets and machines but the brutal reorganisation of the world through conquest, enslavement and extraction. Sugar as a social relation; plantation as field and factory; profits underwriting industry; persistence of inequality; resistance. Written largely in 225-day incarceration. Term 'enslaved'."
+ },
+ {
+  "id": "conventional",
+  "number": "01",
+  "title": "The Conventional Narrative: An Overview",
+  "short": "Myth vs Fact",
+  "pages": "9–14",
+  "summary": "Debunks the 'rise of the West' myth (Age of Discovery, Enlightenment, Industrial Revolution, free labour; looting/genocide/slavery airbrushed). Three airbrushed facts: Caribbean/American sugar plantations made sugar a global commodity; British capital predated Industrial Revolution; US cotton by enslaved Africans underwrote textile revolution. Sugar + enslaved people as paired commodities. Marx on expropriation. Gun-slave-money; demographic catastrophe; 'womb of iron and gold'. Triangular trade + overlooked Indian saltpetre/textiles. Originary accumulation = loot."
+ },
+ {
+  "id": "mediterranean",
+  "number": "02",
+  "title": "Sugar Production in the Mediterranean: From Peasant Agriculture to Plantation Capitalism",
+  "short": "Mediterranean Sugar",
+  "pages": "15–19",
+  "summary": "Sugar unknown to West Europe before Crusades; spread from eastern Mediterranean west to Sicily/Cyprus/Rhodes/Crete, Iberia, North Africa, then Atlantic islands (Madeira, Canary); climate; peasant + corvée → enslaved North Africans after Black Death; Venice/Genoa merchant capital; Portuguese Madeira/Canary→Cape Verde→São Tomé→Brazil; São Tomé final transformation; no major technological change; cane from Levant/Egypt; ratooning; integrated crushing/boiling/refining; 'workflow'; diagram 1 sugar-processing; 9th-c. Euphrates rebellion."
+ },
+ {
+  "id": "atlantic",
+  "number": "03",
+  "title": "Sugar Crosses the Atlantic: The Plantation Complex and the Trade in Enslaved People",
+  "short": "Sugar Crosses the Atlantic",
+  "pages": "20–23",
+  "summary": "Fifteenth–seventeenth c. expansion to Atlantic islands/Brazil/Caribbean; core techniques unchanged; max output min cost from enslaved before replacement; profit driver; Portuguese→Brazil; Dutch 1624–1654 northern Brazil; Dutch→Caribbean; British/French learn Dutch; enslaved-labour plantation complex; synthesis of field and factory; commodity chart (Noël Deerr); sugar islands."
+ },
+ {
+  "id": "caribbean",
+  "number": "04",
+  "title": "The Caribbean Islands: Plantations, Sugar, and Enslaved People",
+  "short": "Caribbean Islands",
+  "pages": "24–26",
+  "summary": "Five main colonial powers (Spain, Portugal, Netherlands, France, England); shifting colonial control with dates; Spanish capture; Barbados 1625/1627; Jamaica 1655; Guadeloupe/Martinique 1635; Rijswijk 1697 Saint-Domingue; Dutch Guiana Essequibo 1616/Suriname; Brazil Portuguese; Tordesillas 1494; land grants; Dutch Pernambuco 1630–1654; Elmina 1637; Dutch→Caribbean; British/French; 'unholy marriage'; differs from Asia/Africa peasant small-mill. Mollweide maps."
+ },
+ {
+  "id": "plantations",
+  "number": "05",
+  "title": "Sugar Production on the Plantations",
+  "short": "On the Plantations",
+  "pages": "27–33",
+  "summary": "Brutal labour-intensive; gang vs task; plantation workflow; field+factory; capitalist management (account books, time-motion, Taylorism); replacement value; market-driven maintenance; gangs by age; cane-holing 60–100 holes/day; manure 1.25t/acre; harvest 5–6 months; 18–20h 6-day shifts; engenho Sunday; provision grounds; mortality; replacement buying; machines intensify exploitation; hand→3-cylinder→wind/water→steam; rivers; 60–200 workers; sugar master; mixed-race/freed skilled; women; technology list; curing; sugar loaves; clay washing; white vs brown; racial discourse; 'whiteness'; tax policy; muscovado; rum; steam; vacuum pans; centrifuges 1830s; beet sugar; etc."
+ },
+ {
+  "id": "markets",
+  "number": "06",
+  "title": "Slavery and Sugar: Market Production, Exports, Re-exports, and Profits",
+  "short": "Markets & Profits",
+  "pages": "34–39",
+  "summary": "Sidney Mintz industrial/modern; 16th–17th c. profitable; three markets (international, local, regional; Lima, Mexico City, New England); re-export centres Lisbon/Antwerp/Amsterdam/England/France; refining copper pans + coal; earliest factories; 'factory' etymology; slave trade centres; sugar consumption; tariffs; 'not even a nail'; enumerated goods; colonial restriction; productivity; ~230,000 1674–1807 (6%); Eltis; slavery's capitalist economics; Eric Williams; profits 40%/5%; 4–7×; value added £0.5m→£5.5m; surplus 40→100%; 4× muscovado/refined transfer pricing; tariffs; +25%; credit; Otaheite; monoculture; infrastructure; 3.2× receipts; 50k→200k t; 430k→3M hundredweight; 7×; 1/5; etc."
+ },
+ {
+  "id": "shipbuilding",
+  "number": "07",
+  "title": "The Trade in Enslaved People and the Rise of Shipbuilding in Britain",
+  "short": "Shipbuilding",
+  "pages": "40–43",
+  "summary": "Caribbean plantations demand enslaved; Portugal+Britain ~70%; British 1640–1807 3.1m/2.7m; Glasgow/Bristol/Manchester/London shipbuilding; slave-ship demand prime driver; internal markets; profit stages; Kingston; £30; £25m; plantation value=#enslaved; collateral; factors 'seasoning'; retail; separation; market evolution; 'scramble'→negotiated; Burnard & Morgan quote; prices rise; guns/gunpowder/Indian textiles; barter 100→112→40; muskets 2→15; gun-slave; diseconomies of scale; 'primitive only in brutality.'"
+ },
+ {
+  "id": "finance",
+  "number": "08",
+  "title": "Colonialism, the Trade in Enslaved People, Sugar, and the Financial System",
+  "short": "Financial System",
+  "pages": "44–48",
+  "summary": "Rise of Western Europe ~500 years; merchant capital+naval+guns+gunpowder+state; core vs Americas/Africa/Asia 1500–1800; genocidal encounter; silver Bolivia/Mexico→Western Europe→Asia; enslaved sub-Saharan→Americas/Caribbean sugar+silver mines; 'commodity'; 'slavery's capitalism'; capitalist finance intrinsic; asiento; South Sea Company+Royal Africa; real de a ocho; silver 80%; Manila galleon; China; India; Plassey 1757; land tax; Opium 1839–1860; guilder→sterling; sugar+slavery+asiento→silver→Asia; genocide+slavery+plunder; etc."
+ },
+ {
+  "id": "acknowledgements",
+  "number": "09",
+  "title": "Acknowledgements",
+  "short": "Acknowledgements",
+  "pages": "49",
+  "summary": "Sumangala Damodaran research; map-makers; Mercator→Mollweide; editors incl. Githa Hariharan deciphering hand-scribbles from jail; unnamed editors."
+ },
+ {
+  "id": "notes",
+  "number": "10",
+  "title": "Notes",
+  "short": "Notes & Sources",
+  "pages": "50–53",
+  "summary": "57 endnotes; key scholars: Wolf, Angus, Baptist, James, Williams, Rodney, Inikori, Beckert, Mintz, Eltis, Richardson, Findlay, Kobayashi, Bosma, Flynn & Giráldez, Rönnbäck, Rosenthal, Schwartz, Sheridan, Burnard & Morgan, Radburn, Meillassoux, Whatley, Engerman, Berg & Hudson, Utsa Patnaik & Sam Moyo, Wallerstein/Frank, etc."
+ }
+]
